@@ -37,7 +37,7 @@ class DNN(nn.Module):
 
 
 class AdvDNN(nn.Module):
-    def __init__(self, num_features, num_targets):
+    def __init__(self, num_features, num_targets, hidden_size):
         super(AdvDNN, self).__init__()
         self.hidden_size = [1500, 1250, 1000, 750]
         self.dropout_value = [0.5, 0.35, 0.3, 0.25]
